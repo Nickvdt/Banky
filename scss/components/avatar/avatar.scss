@@ -1,0 +1,48 @@
+@use "../../abstracts/colors";
+
+.avatar{
+    width: 10rem;
+    height: 10rem;
+    background: map-get(colors.$baseColors, "backgroundDark");
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 0.6rem lightcoral;
+    cursor: pointer;
+
+    
+}
+
+.header{
+    
+    &__avatar{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    
+    &__avatarHead{
+        width: 40%;
+        height: 40%;
+        background: map-get(colors.$baseColors, "whiteColor");
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.8s;
+    }
+    
+    &__avatarBody{
+        width: 50%;
+        height: 50%;
+        background: map-get(colors.$baseColors, "whiteColor");
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        bottom: 0;
+        top: 100%;
+    }
+}
+
