@@ -1,5 +1,13 @@
 @use "../../abstracts/colors";
 
+.avatarWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    
+}
+
 .avatar{
     width: 10rem;
     height: 10rem;
@@ -10,18 +18,7 @@
     border: 0.6rem lightcoral;
     cursor: pointer;
 
-    
-}
-
-.header{
-    
-    &__avatar{
-        display: flex;
-        justify-content: flex-end;
-        
-    }
-    
-    &__avatarHead{
+    &__head{
         width: 40%;
         height: 40%;
         background: map-get(colors.$baseColors, "whiteColor");
@@ -32,8 +29,7 @@
         transform: translate(-50%, -50%);
         transition: 0.8s;
     }
-    
-    &__avatarBody{
+    &__body{
         width: 50%;
         height: 50%;
         background: map-get(colors.$baseColors, "whiteColor");
@@ -44,5 +40,5 @@
         bottom: 0;
         top: 100%;
     }
-}
 
+}

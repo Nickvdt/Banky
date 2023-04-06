@@ -1,18 +1,21 @@
 @use "../../abstracts/vars";
 @use "../../abstracts/colors";
+@use "../../abstracts/animations";
 
 .header {
     background: map-get(colors.$baseColors, "whiteColor");
     height: map-get(vars.$vhCalc, "heightOfHeader");
     max-width: 150rem;
     font-family: 'Amatic SC', cursive;
-    font-family: 'Open Sans', sans-serif;
+    
     padding: 2rem;
     border-top-left-radius: 5rem;
     border-top-right-radius: 5rem;
     margin: 0 auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 10% 80% auto;
+
     &__logo{
         display: flex;
         font-size: 300%;
