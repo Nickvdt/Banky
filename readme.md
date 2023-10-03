@@ -1,0 +1,2 @@
+# Banky
+Banky is een online bankomgeving waar je toegang hebt tot verschillende rekeningen. De HTML-structuur wordt gerenderd door middel van JavaScript. De data wordt opgehaald via JSON en voor de stijl wordt er SCSS (sass) gebruikt.
